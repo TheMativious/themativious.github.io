@@ -1,0 +1,362 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.rojo {
+    font-weight: 300;
+    color: #da4d4f;
+}
+
+.azul {
+    font-weight: 700;
+    color:#333b4b;
+}
+
+.texto-negro {
+	color: #333b4b;
+}
+
+/* ------------------------- */
+/* Clases de Fullpage.js */
+/* ------------------------- */
+#fp-nav ul li a span {
+    background: #da4d4f;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: #da4d4f;
+}
+
+/* ------------------------- */
+/* Menu de Navegacion */
+/* ------------------------- */
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #333b4b;
+    transition: .5s ease;
+}
+
+.nav li.active {
+    border-bottom: 2px solid #da4d4f;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: #da4d4f;
+}
+
+
+/* ------------------------- */
+/* Header */
+/* ------------------------- */
+.header {
+    background-color: #fff;
+    background-position: center;
+}
+
+.header .contenedor-titulo {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.header .titulo {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.header .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
+}
+
+.logo{
+    border-radius: 100%;
+}
+
+/* ------------------------- */
+/* Animaciones */
+/* ------------------------- */
+@keyframes bajar-subir {
+    0% { transform: translateY(20px); }
+    25% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}
+
+/* ------------------------- */
+/* Productos */
+/* ------------------------- */
+.sobremi article { 
+    background-position: center;
+    background-size: cover;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 20px;
+    overflow: auto;
+    max-width: 50%;
+    padding: 10px; /* Agregar espacio alrededor del contenido */
+  }
+
+  .titulillo {
+    font-size: 40px;
+  }
+
+.productos .informacion-producto {
+    margin: 0 30px;
+}
+
+.productos .informacion-producto::before {
+    content: "";
+    height: 50px;
+    width: 2px;
+    display: inline-block;
+    background: orange;
+    position: absolute;
+    top: 50%;
+    margin: -10px;
+}
+
+.productos .modelo {
+    font-size: 45px;
+}
+
+.productos .descripcion {
+    font-size: 22px;
+}
+
+.productos .precio {
+    font-size: 25px;
+}
+
+.productos .precio::before {
+    content: "$";
+    display: inline-block;
+}
+
+/* ------------------------- */
+/* Clases de fullpage.js - Flechas de Slide */
+/* ------------------------- */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #000 transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    right: 50px;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #000;
+}
+
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+.redes .texto-naranja {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.redes h2 {
+    opacity: 1; /* Cambia el valor de opacity a 1 */
+    font-family: 'Oswald', sans-serif;
+    transition: 1s ease all;
+    color: #000;
+}
+
+.redes .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.redes .redes-sociales a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20px;
+}
+
+.redes .twitterx i { color: #000; }
+.redes .discord i { color: #7289da; }
+.redes .github i { color: #000; }
+
+.redes .twitterx:hover { background: #000; color:#fff; transition: all .7s ease;
+    -webkit-transition: all .7s ease;}
+.redes .discord:hover { background: #7289da; color:#fff; transition: all .7s ease;
+    -webkit-transition: all .7s ease; }
+.redes .github:hover { background: #000; color:#fff; transition: all .7s ease;
+    -webkit-transition: all .7s ease; }
+
+.redes .twitterx:hover i { color: #fff; }
+.redes .discord:hover i { color: #fff; }
+.redes .github:hover i { color: #fff; }
+
+.redes .twitch i { color: #6441a5; }
+.redes .yt i { color: #ff0000; }
+
+.redes .twitch:hover { background: #6441a5; color:#fff; transition: all .7s ease;
+    -webkit-transition: all .7s ease; }
+.redes .yt:hover { background: #ff0000; color:#fff; transition: all .7s ease;
+    -webkit-transition: all .7s ease; }
+
+.redes .twitch:hover i { color: #fff; }
+.redes .yt:hover i { color: #fff; }
+
+.abandonao {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+  }
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 768px) {
+    .menu li a,
+    .menu li.active a {
+        font-size: 18px;
+    }
+    .modelo {
+        font-size: 40px;
+    }
+    .precio {
+        font-size: 23px;
+    }
+    .footer h2 {
+        font-size: 15px;
+    }
+    .footer .redes-sociales {
+        font-size: 30px;
+    }
+    .footer .redes-sociales a {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer .texto-naranja {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header .titulo {
+        font-size: 60px;
+    }
+
+    .informacion-producto {
+        position: absolute;
+        top: 70%;
+    }
+
+    .fp-controlArrow.fp-next {
+        left: 100px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu li a,
+    .menu li.active a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .titulo {
+        font-size: 45px;
+    }
+
+    .productos .modelo {
+        font-size: 30px;
+    }
+
+    .footer .texto-naranja {
+        font-size: 18px;
+    }
+
+    .footer .redes-sociales a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer .redes-sociales a i {
+        font-size: 24px;
+    }
+}
