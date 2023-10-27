@@ -8,8 +8,9 @@
 }
 
 body { 
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    color:#fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,29 +18,24 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
-.rojo {
-    font-weight: 300;
-    color: #da4d4f;
-}
 
-.azul {
-    font-weight: 700;
-    color:#333b4b;
+.title {
+    color:#da4d4f;
 }
 
 .texto-negro {
-	color: #333b4b;
+	color: #da4d4f;
 }
 
 /* ------------------------- */
 /* Clases de Fullpage.js */
 /* ------------------------- */
 #fp-nav ul li a span {
-    background: #da4d4f;
+    background: #fff;
 }
 
 #fp-nav ul li .fp-tooltip {
-    color: #da4d4f;
+    color: #fff;
 }
 
 /* ------------------------- */
@@ -62,14 +58,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-size: 19px;
-    color: #333b4b;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
+    color: #fff;
     transition: .5s ease;
 }
 
 .nav li.active {
-    border-bottom: 2px solid #da4d4f;
+    border-bottom: 2px solid #fff;
 }
 
 .menu li a {
@@ -80,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu li.active a,
 .menu li:hover a {
-    color: #da4d4f;
+    color: #fff;
 }
 
 
@@ -99,8 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header .titulo {
-    font-size: 70px;
-    text-transform: uppercase;
+    font-size: 60px;
 }
 
 .header .contenedor-icono {
@@ -133,6 +128,25 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+.cuadradoaestetic{
+    background-color: #fff;
+    border-radius: 30px;
+    width: 70%;
+    padding: 20px;
+}
+
+.redeslink:visited {
+    color: blue;
+  }
+
+  .project {
+    color: #000;
+  }
+
+  .project:visited {
+    color: #000;
+  }
+
 .centrado {
     display: flex;
     justify-content: center;
@@ -140,12 +154,39 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-size: 20px;
     overflow: auto;
-    max-width: 50%;
-    padding: 10px; /* Agregar espacio alrededor del contenido */
+    max-width: 70%;
+    padding: 5px;
+    color: #000;
   }
+  
+  #logiuto {
+    font-size: 28px;
+  }
+
+  .logoapp{
+    padding: 0px 10px;
+  }
+  .studio{
+    padding: 0px 10px;
+    border-radius: 100%;
+    width: 100px;
+    height: 80px;
+  }
+
+  .studio:hover{
+    border-radius: 0px;
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+  }
+
+.projectos{
+    border-radius: 20px;
+}
 
   .titulillo {
     font-size: 40px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
   }
 
 .productos .informacion-producto {
@@ -163,22 +204,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: -10px;
 }
 
-.productos .modelo {
-    font-size: 45px;
-}
 
-.productos .descripcion {
-    font-size: 22px;
-}
-
-.productos .precio {
-    font-size: 25px;
-}
-
-.productos .precio::before {
-    content: "$";
-    display: inline-block;
-}
 
 /* ------------------------- */
 /* Flechas de Slide */
@@ -191,13 +217,13 @@ h1, h2, h3, h4, h5, h6 {
 .fp-controlArrow.fp-prev {
     left: 80%;
     border-width: 20px 20px 20px 0;
-    border-color: transparent #000 transparent transparent;
+    border-color: transparent #fff transparent transparent;
 }
 
 .fp-controlArrow.fp-next {
     right: 50px;
     border-width: 20px 0 20px 20px;
-    border-color: transparent transparent transparent #000;
+    border-color: transparent transparent transparent #fff;
 }
 
 /* ------------------------- */
@@ -205,16 +231,16 @@ h1, h2, h3, h4, h5, h6 {
 /* ------------------------- */
 .redes .texto-naranja {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 2px;
     margin-bottom: 40px;
 }
 
 .redes h2 {
     opacity: 1; /* Cambia el valor de opacity a 1 */
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     transition: 1s ease all;
-    color: #000;
+    color: #fff;
 }
 
 .redes .redes-sociales {
@@ -226,9 +252,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .redes .redes-sociales a {
     display: flex;
-    width: 100px;
-    height: 100px;
-    background: #fff;
+    width: 80px;
+    height: 80px;
+    background: ##353849;
     color: #fff;
     text-decoration: none;
     align-items: center;
@@ -264,8 +290,9 @@ h1, h2, h3, h4, h5, h6 {
 .redes .yt:hover i { color: #fff; }
 
 .abandonao {
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    padding: 10px;
   }
 
 /* ------------------------- */
@@ -360,3 +387,4 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 24px;
     }
 }
+

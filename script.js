@@ -21,7 +21,7 @@ const seccionesPagina = new fullpage('#fullpage', {
 	// ──────────────────────────────────────────────────
 	//   :::::: Secciones
 	// ──────────────────────────────────────────────────
-	sectionsColor : ['#fff', '#fff', '#fff'], // Color de fondo de cada seccion.
+	sectionsColor : ['#353849', '#da4d4f', '#353849'], // Color de fondo de cada seccion.
 	verticalCentered: true, // Si alineara de forma vertical los contenidos de cada seccion.
 	// ──────────────────────────────────────────────────
 	//   :::::: Slides
