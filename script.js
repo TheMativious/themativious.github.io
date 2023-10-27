@@ -13,7 +13,7 @@ const seccionesPagina = new fullpage('#fullpage', {
 	// ──────────────────────────────────────────────────
 	//   :::::: Barra de navegación
 	// ──────────────────────────────────────────────────
-	navigation: true, // Muesta la barra de navegación.
+	navigation: true, // Muesta la barra de navegacion.
 	menu: '#menu', // Menu de navegación.
 	anchors: ['inicio', 'sobremi', 'redes'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
 	navigationTooltips: ['Inicio', 'Sobre Mí', 'Redes'], // Tooltips que mostrara por cada boton.
