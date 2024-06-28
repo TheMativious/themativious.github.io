@@ -1,5 +1,5 @@
 {
-    "maintenance": false,
+    "maintenance": true,
     "maintenance_message": "Servidor en mantención!",
     "online": false,
     "client_id": "",
