@@ -1,0 +1,22 @@
+{
+    "maintenance": false,
+    "maintenance_message": "Servidor en mantención!",
+    "online": false,
+    "client_id": "",
+    "game_version": "1.19",
+    "verify": false,
+    "java": true,
+    "game_args": [],
+    "dataDirectory": "1clauncher",
+    "ignored": ["crash-reports", "logs", "resourcepacks", "options.txt", "optionsof.txt", "resources", "saves", "shaderpacks"],
+    "loader": {
+        "type": "forge",
+        "build": "latest",
+        "enable": true
+    },
+    "status": {
+        "nameServer": "Hypixel",
+        "ip": "hypixel.net",
+        "port": 25565
+    }
+}
