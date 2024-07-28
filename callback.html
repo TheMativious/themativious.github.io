@@ -12,10 +12,9 @@
         const params = new URLSearchParams(hash);
         const accessToken = params.get('access_token');
 
-        // Almacenamos el token de acceso en el localStorage del padre
+        // Enviamos el token de acceso a la ventana principal
         if (accessToken) {
-            window.opener.localStorage.setItem('spotifyAccessToken', accessToken);
-            window.opener.location.reload(); // Refrescamos la ventana principal para obtener la canción actual
+            window.opener.postMessage(accessToken, window.location.origin);
         }
 
         // Cerramos la ventana emergente
